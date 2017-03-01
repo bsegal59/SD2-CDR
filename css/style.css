@@ -97,6 +97,10 @@ hr {
     margin-bottom: 92px;
 }
 
+#derivation1, #derivation2, #derivation3 {
+    display: none;
+}
+
 #about .section-title, #plan .section-title {
     border-color: #ffffff;
 }

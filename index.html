@@ -179,69 +179,64 @@ http://www.tooplate.com/view/2078-adventure
 
 				<!-- Section title
 			================================================== -->
-				<div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8 wow fadeInUp">
+				<div class="col-md-offset-1 col-md-10 col-sm-offset-1 col-sm-10 wow fadeInUp">
 					<div class="section-title">
 						<h5 class="wow bounceIn" style="color:#000"> Mechanical Design </h5>
 						<h1 class="heading ">MATHEMATICS </h1>
 						<hr>
-						<p>Reference the Equations Below to find the </p>
+						<p>Reference to the equations below to see how we chose the geometry for our forceplate<br/>
+							<a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.513.7996&rep=rep1&type=pdf" target="_blank">The Heglund Paper</a> is what we used to model our springblade geometry
+						</p>
 					</div>
 				</div>
 
-				<div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
-					<div class="plan">
-						<h2 class="plan-title">Partner</h2>
+				<div class="col-md-offset-2 col-md-8 col-md-offset-2 col-sm-8 wow fadeInUp" data-wow-delay="0.3s">
+					<div class="section-title">
+						<h2 class="plan-title">Preventing Resonance</h2>
 						<div class="plan-price">
-							<h1 class="plan-price-title">Join the Team</h1>
+							<h1 class="plan-price-title">Natural Frequency</h1>
 						</div>
-						<ul class="plan-list">
-
-							<li>Join Project Meetings</li>
-							<li>Get Firsthand Project Experience</li>
-							<li>Learn about a culture</li>
-							<li>Volunteer Time</li>
-						</ul>
-						<div class="plan-button">
-							<a class="btn btn-default" href="http://eepurl.com/cz7N1b" target="_blank">JOIN TEAM</a>
-						</div>
+						<p>$$ \omega = \frac{0.5}{\sqrt{y_o}} $$ </p>
+						<button class="plan-button" id="button1">
+							See Derivation
+						</button>
+						<p id="derivation1">
+							Euler Bernoulli Beam Theory $$ EI \frac{d^{4}y}{dx^{4}} + \rho A \frac{d^2y}{dt^2} $$ Normal Mode solution $$ Y(x,t) = X(x)T(t) $$ $$ \frac{EI}{\rho A}\frac{d^{4}X}{dx^{4}}T(t) - \frac{d^2T}{dt^2}=0 $$ Solution for displacement is $$ X(x)= C_1 \cos{x\lambda}+C_2\sin{x\lambda}+C_3\cosh{x\lambda}+C_4\sinh{x\lambda}$$
+						</p>
 					</div>
 				</div>
 
-				<div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.6s">
-					<div class="plan">
-						<h2 class="plan-title">Promoter</h2>
+				<div class="col-md-offset-2 col-md-8 col-md-offset-2 col-sm-8 wow fadeInUp" data-wow-delay="0.6s">
+					<div class="section-title">
+						<h2 class="plan-title">Preventing Structural Failure</h2>
 						<div class="plan-price">
-							<h1 class="plan-price-title">Spread the Word</h1>
+							<h1 class="plan-price-title">Strain and Stress</h1>
 						</div>
-						<ul class="plan-list">
-							<li>Share using Facebook!</li>
-							<li>Post To your wall</li>
-							<li>Start a Dialog</li>
-						</ul>
-						<div class="plan-button">
-							<a class="btn btn-default" href="https://www.facebook.com/sharer.php?https%3A%2F%2Fsupport.ewb-usa.org%2Fevents%2Ftemple-university-chapter%2Fe84031&u=https%3A%2F%2Fsupport.ewb-usa.org%2Fevents%2Ftemple-university-chapter%2Fe84031" target="_blank">PROMOTE</a>
-						</div>
+						<button class="plan-button" id="button2">See Derivation</button>
+						<p id="derivation2">
+							Test
+						</p>
 					</div>
 				</div>
-
-				<div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.9s">
-					<div class="plan">
-						<h2 class="plan-title">Fundraiser</h2>
-						<div class="plan-price">
-							<h1 class="plan-price-title">No amount is too little</h1>
-						</div>
-						<ul class="plan-list">
-							<li>Donate Funds to our trip</li>
-							<li>$1-$500</li>
-							<li>Start a fundraiser!</li>
-						</ul>
-						<div class="plan-button">
-							<a class="btn btn-default" href="https://support.ewb-usa.org/events/temple-university-chapter/e84031" target="_blank">DONATE</a>
-						</div>
-					</div>
-				</div>
-
 			</div>
+
+			<div class="col-md-offset-2 col-md-8 col-md-offset-2 col-sm-8 wow fadeInUp" data-wow-delay="0.9s">
+				<div class="section-title">
+					<h2 class="plan-title">Displacement</h2>
+					<div class="plan-price">
+						<h1 class="plan-price-title">No amount is too little</h1>
+					</div>
+					<button class="plan-button" id="button3">
+						See Derivation
+					</button>
+					<p id="derivation3">
+
+
+					</p>
+				</div>
+			</div>
+
+		</div>
 		</div>
 	</section>
 
@@ -264,7 +259,8 @@ http://www.tooplate.com/view/2078-adventure
 						<h1 class="heading">CODE</h1>
 						<hr>
 						<p>We developed a method to iterate through design choices using a script written in the open source scipting language
-							<a href="" </p>
+							<a href="http://julialang.org/"></a>
+						</p>
 					</div>
 				</div>
 
@@ -273,7 +269,7 @@ http://www.tooplate.com/view/2078-adventure
 						<h5 class="wow bounceIn" style="color:#000">INPUTS</h5>
 						<h1 class="heading">STEP 1</h1>
 						<hr>
-						<ul>
+						<ul class="plan-list">
 							<li>
 								Properties for $E,S_y, \rho$ of the materials
 							</li>
@@ -290,7 +286,7 @@ http://www.tooplate.com/view/2078-adventure
 						<h5 class="wow bounceIn" style="color:#000">OUTPUTS</h5>
 						<h1 class="heading"> STEP 2</h1>
 						<hr>
-						<ul>
+						<ul class="plan-list">
 							<li>
 								Dimensions and material type that would not break
 							</li>
@@ -306,7 +302,7 @@ http://www.tooplate.com/view/2078-adventure
 						<h5 class="wow bounceIn" style="color:#000">ANALYZE</h5>
 						<h1 class="heading">STEP 3 </h1>
 						<hr>
-						<ul>
+						<ul class="plan-list">
 							<li>
 								Filter the Results to ABS Plastic
 							</li>
@@ -323,7 +319,17 @@ http://www.tooplate.com/view/2078-adventure
 
 					</div>
 				</div>
+				<div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-md-8 wow fadeInUp">
+					<div class="section-title">
+						<h5 class="wow bounceIn" style="color:#000">LINK TO CODE LISTING</h5>
+						<h1 class="heading">CODE</h1>
+						<hr>
+						<p>
+							<a href="https://github.com/bsegal59/SD2-CDR/blob/master/deflection.jl" target="_blank" class="fa fa-github wow fadeIn" data-wow-delay="0.6s"></a><a href="https://github.com/bsegal59/SD2-CDR/blob/master/deflection.jl" target="_blank">Link to Code listing</a>
+						</p>
 
+					</div>
+				</div>
 
 				<!-- Portfolio bottom section
 			================================================== -->
@@ -599,6 +605,7 @@ tuf12883@temple.edu;bryanna.wands@temple.edu;tue92062@temple.edu" target="_blank
 	</script>
 	<script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML">
 	</script>
+	<script src="js/derivations.js"></script>
 </body>
 
 </html>
