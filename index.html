@@ -114,7 +114,7 @@ http://www.tooplate.com/view/2078-adventure
 						<h5 class="wow bounceIn">Doctor DREADD</h5>
 						<h1 class="heading">THEORY</h1>
 						<hr>
-						<p>support community-driven development programs worldwide by collaborating with local partners to design and implement sustainable engineering projects, while creating transformative experiences and responsible leaders.</p>
+						<p>The goal of this to validate the influence of the DREADDs technology on SCI recovery by analysis of rat limb kinetics </p>
 					</div>
 				</div>
 
@@ -128,7 +128,13 @@ http://www.tooplate.com/view/2078-adventure
 							<h5 class="wow bounceIn" style="color:#000">Biomedical</h5>
 							<h1 class="heading ">DREADDS</h1>
 							<hr>
-							<p class="">Our Chapter is currently fundraising to send our students on a second trip to Saccha, Peru to help the community there get access to fresh water.</p>
+							<p class="">Designer Receptors Exclusively Activated by Designer Drugs</p>
+							<img src="img/dreadds.png" />
+							<ul class="plan-list">
+								<li>
+
+								</li>
+							</ul>
 						</div>
 					</div>
 
@@ -137,34 +143,25 @@ http://www.tooplate.com/view/2078-adventure
 							<h5 class="wow bounceIn" style="color:#000">Biomedical</h5>
 							<h1 class="heading"> GAIT ANALYSIS</h1>
 							<hr>
-							<p>Our Chapter is currently fundraising to send our students on a second trip to Saccha, Peru to help the community there get access to fresh water.</p>
+							<p>One Can Test an animal's gait Kinematically and Kinetically. In the case of Kinematics the subject is analyzed with trackers and cameras to track the motion of joints and limbs to determine abnormalities. Kinetics measures quantitative forces exerted
+								by the limbs to determine if the subject is compensating while hiding their injury. </p>
 						</div>
 					</div>
 
 					<div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8 wow fadeInUp">
 						<div class="section-title">
 							<h5 class="wow bounceIn" style="color:#000">Mechanical</h5>
-							<h1 class="heading ">INVOLVEMENT</h1>
+							<h1 class="heading ">FORCE PLATE</h1>
 							<hr>
-							<p class="">Our Chapter is currently fundraising to send our students on a second trip to Saccha, Peru to help the community there get access to fresh water.</p>
+							<p class="">A force plate is a piece of measurment equipment used in kinetic Gait analysis. It measures the force using sensors to directly measure force or by measuring displacements/strains to find the force that caused them. </p>
 						</div>
 					</div>
 					<div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8 wow fadeInUp">
 						<div class="section-title">
 							<h5 class="wow bounceIn" style="color:#000">Mechanical</h5>
-							<h1 class="heading ">INVOLVEMENT</h1>
+							<h1 class="heading ">ABS PLASTIC</h1>
 							<hr>
-							<p class="">Our Chapter is currently fundraising to send our students on a second trip to Saccha, Peru to help the community there get access to fresh water.</p>
-						</div>
-					</div>
-
-
-					<div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8 wow fadeInUp">
-						<div class="section-title">
-							<h5 class="wow bounceIn" style="color:#000">Mechancial</h5>
-							<h1 class="heading ">INVOLVEMENT</h1>
-							<hr>
-							<p class="">Our Chapter is currently fundraising to send our students on a second trip to Saccha, Peru to help the community there get access to fresh water.</p>
+							<p class="">Acrylonitrile butadiene styrene is a material that has the ability to be 3D printed using the Objex Printer on the 3rd Floor which is a ideal candiate for creating a Force Plate using 3D printing. </p>
 						</div>
 					</div>
 				</div>
@@ -201,7 +198,17 @@ http://www.tooplate.com/view/2078-adventure
 							See Derivation
 						</button>
 						<p id="derivation1">
-							Euler Bernoulli Beam Theory $$ EI \frac{d^{4}y}{dx^{4}} + \rho A \frac{d^2y}{dt^2} $$ Normal Mode solution $$ Y(x,t) = X(x)T(t) $$ $$ \frac{EI}{\rho A}\frac{d^{4}X}{dx^{4}}T(t) - \frac{d^2T}{dt^2}=0 $$ Solution for displacement is $$ X(x)= C_1 \cos{x\lambda}+C_2\sin{x\lambda}+C_3\cosh{x\lambda}+C_4\sinh{x\lambda}$$
+							Euler Bernoulli Beam Theory $$ EI \frac{d^{4}y}{dx^{4}} + \rho A \frac{d^2y}{dt^2} $$ Normal Mode solution $$ Y(x,t) = X(x)T(t) $$ $$ \frac{EI}{\rho A}\frac{d^{4}X}{dx^{4}}T(t) - \frac{d^2T}{dt^2}=0 $$ Solution for displacement is $$ X(x)= C_1 \cos{(x\lambda)}+C_2\sin{(x\lambda)}+C_3\cosh{(x\lambda)}+C_4\sinh{(x\lambda)}$$
+							Where $$ \lambda = (\frac{\rho A}{EI}\omega^2)^{\frac{1}{4}} $$ Initial Conditions<br /> At x = 0 : $y=0 \& \frac{dy}{dx}=0$ <br /> At x = L : $\frac{d^2y}{dx^2}=0 \& \frac{d^3y}{d^x}=0$<br /> This proves: $$ C_2=-C_4 \& C_1 =-C_3$$ Solving
+							for C_1 and C_2 we find: $$ \cos{(\beta L)}cosh{(\beta L)}=-1 $$ The roots of the equation are: $$ \beta_n L = \frac{(2n-1)\pi}{2} $$ The equation for time is : $$ T(t)=b_1 \sin{((\beta_{n}^{2}\sqrt{\frac{EI}{\rho A}})t)}+b_2\cos{(\beta_{n}^{2}\sqrt{\frac{EI}{\rho
+							A}})t)} $$ Therefore the Frequency in rad/s is: $$ \omega_n = \frac{\beta_n^2}{L^2}\sqrt{\frac{EI}{\rho A}}$$ In Hertz, the natural frequency is: $$ f_n = \frac{\omega_n}{2\pi}=\frac{\beta_n^2}{2\pi L^2}\sqrt{\frac{EI}{\rho A}}$$ Where the 1st
+							mode is approximately $ 0.5\sqrt{\frac{EI}{\rho A}}= \frac{0.5}{\sqrt{y_o}} $
+
+
+
+
+
+
 						</p>
 					</div>
 				</div>
@@ -212,9 +219,27 @@ http://www.tooplate.com/view/2078-adventure
 						<div class="plan-price">
 							<h1 class="plan-price-title">Strain and Stress</h1>
 						</div>
+						<p>
+							$$ \sigma = \frac{M_zc}{I_x}$$ $$ \epsilon = \frac{\sigma}{E}$$
+						</p>
 						<button class="plan-button" id="button2">See Derivation</button>
 						<p id="derivation2">
-							Test
+							Calculate the couple moment at the end of the beam. $$ M = FL$$ We also know that the beam strains linearly in the axial direction if it is in the Elastic Region of stress $$ \epsilon_x = \frac{y}{c}\epsilon_{max} $$ If our Material is homogoneous then
+							the youngs Modulus is constant throughout. $$ E\epsilon_x = \frac{y}{c}E\epsilon_{max} = \sigma_x= \frac{y}{c}\sigma_{max}$$ If we are looking at a differential beam element a distance from the neutral axis $$ dM = ydF$$ Integrating on both sides
+							$$ M_z = \int_A ydF = \int_A y(\sigma_xdA)=y(\frac{y}{c}\sigma_{max})dA$$ $$ M_z = \frac{\sigma_{max}}{c}\int_A y^2dA=\frac{I_z \sigma_{max}}{c}$$ $$ \therefore \sigma_{max}=\frac{cM_z}{I_x} $$
+							<ul id="derivation2" class="plan-list">
+								<li>
+									Shear Force is negligible
+								</li>
+								<li>
+									Material is isotropic
+								</li>
+								<li>
+									Material is within the Elastic Region
+								</li>
+							</ul>
+
+
 						</p>
 					</div>
 				</div>
@@ -222,16 +247,20 @@ http://www.tooplate.com/view/2078-adventure
 
 			<div class="col-md-offset-2 col-md-8 col-md-offset-2 col-sm-8 wow fadeInUp" data-wow-delay="0.9s">
 				<div class="section-title">
-					<h2 class="plan-title">Displacement</h2>
+					<h2 class="plan-title">Preventing Gait Disruption</h2>
 					<div class="plan-price">
-						<h1 class="plan-price-title">No amount is too little</h1>
+						<h1 class="plan-price-title">Displacement</h1>
 					</div>
+					<p>
+						$$ y_{max}= \frac{FL^3}{3EI} $$
+					</p>
 					<button class="plan-button" id="button3">
 						See Derivation
 					</button>
 					<p id="derivation3">
-
-
+						Assuming the load is a point load at the beginning of the beam and that it will provide a small deflection $$ \frac{d^2y}{d^2x}= \frac{M(x)}{EI} $$ We then integrate to find the change in the defleciton over the length of the beam $$ EI \frac{dy}{dx}=
+						\int_0^x -M(x)dx +C_1 $$ $$ \frac{dy}{dx}= \theta $$ $\theta=0$ at x=L so: $$ EI\frac{dy}{dx}=\int_0^x -\frac{Px^2}{2} + \frac{PL^2}{2} dx$$ Integrating again $$ EIy= -\frac{Px^3}{6} + \frac{PL^2}{2} + C_2 $$ At x = L the y = 0 so: $$ EIy= -\frac{Px^3}{6}
+						+ \frac{PL^2x}{2} - \frac{PL^3}{3} $$ Evaluated at x = L : $$ y_{max}= \frac{FL^3}{3EI} $$
 					</p>
 				</div>
 			</div>
@@ -367,7 +396,7 @@ http://www.tooplate.com/view/2078-adventure
 				</div>
 
 				<div class="col-md-6 col-sm-12">
-					<h2 class="mobile-top">WHY JOIN US?</h2>
+					<h2 class="mobile-top">Additional Information</h2>
 					<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 
 						<div class="panel panel-default">
@@ -395,9 +424,9 @@ http://www.tooplate.com/view/2078-adventure
 							</h4>
 							</div>
 							<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-								<div class="panel-body">
+								<div class="panel-body" style="background-color:#ffffff">
 									<center>
-										<table style="background-color:#fff">
+										<table>
 											<tbody>
 												<tr>
 													<th>
@@ -432,23 +461,33 @@ http://www.tooplate.com/view/2078-adventure
 											</tbody>
 										</table>
 									</center>
-
 								</div>
 							</div>
 						</div>
-
 						<div class="panel panel-default">
 							<div class="panel-heading" role="tab" id="headingThree">
 								<h4 class="panel-title" style="color:#000">
-								<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-									Altruism
-								</a>
-							</h4>
+											<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+												EQUATIONS
+											</a>
+										</h4>
 							</div>
 							<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-								<div class="panel-body">
-									<p>While you are here at Temple you will want to look back at the impact that you made and say that you improved peoples lives. This is something we do year after year. Imagine saying, 'When I was in college I helped Save A Life/Empower a Child/Restore
-										a Community.'</p>
+								<div class="panel-body" style="background-color:#ffffff">
+									<ul class="plan-list">
+										<li>
+											GF = Gage Factor<br /> L = Length of spring blade<br /> t = Thickness of spring blade
+										</li>
+										<li>
+											$$ V_r=[\frac{V_{OUT}}{V_{IN}}_{strained}-\frac{V_{OUT}}{V_{IN}}_{unstrained}] $$
+										</li>
+										<li>
+											$$ \epsilon = \frac{-2V_r}{GF}(1+\frac{R_l}{R_g}) $$
+										</li>
+										<li>
+											$$ F = \frac{4IE\epsilon}{Lt} $$
+										</li>
+									</ul>
 								</div>
 							</div>
 						</div>
@@ -473,58 +512,88 @@ http://www.tooplate.com/view/2078-adventure
 						<h5 class="wow bounceIn">Testing</h5>
 						<h1 class="heading">RODENTS</h1>
 						<hr>
-						<p>EWB's Eboard strives to empower their members with challanges to succeed and learn from the projects and challanges that we must overcome throughout the year. Elections are held every Spring and several positions are always available.</p>
+						<p>Our team has been diligent to become trained with the rodents in the Spence Lab so that they have a hand in testing procedures and determine how the experiments to test the DREADDS will be carried out.</p>
 					</div>
 				</div>
 
-				<div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
-					<div class="team-wrapper">
-						<img src="images/team1.jpg" class="img-responsive" alt="team img">
-						<div class="team-des">
-							<h4>Brandon Segal</h4>
-							<h3>President</h3>
-							<ul class="social-icon">
-								<li>
-									<a href="https://www.linkedin.com/in/brandonsegal/" class="fa fa-linkedin wow fadeIn" data-wow-delay="0.3s" target="_blank"></a>
-								</li>
-								<li>
-									<a href="https://www.instagram.com/brandonsegal1108/?hl=en" class="fa fa-instagram wow fadeIn" data-wow-delay="0.6s" target="_blank"></a>
-								</li>
-							</ul>
-						</div>
+				<div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8 wow fadeInUp">
+					<div class="section-title">
+						<h5 class="wow bounceIn" style="color:#000">RATS</h5>
+						<h1 class="heading ">Measurements</h1>
+						<hr>
+						<ul class="plan-list">
+							<li>
+								Weight : $ 250g \pm 10g $
+							</li>
+							<li>
+								Age: 6 months
+							</li>
+							<li>
+								Length (Nose-Posterior): $ 150mm \pm 10mm $
+							</li>
+						</ul>
 					</div>
 				</div>
 
-				<div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay=".6s">
-					<div class="team-wrapper">
-						<img src="images/team2.JPG" class="img-responsive" alt="team img">
-						<div class="team-des">
-							<h4>Zachary Klee</h4>
-							<h3>International Project Lead</h3>
-							<ul class="social-icon">
-								<li>
-									<a href="https://www.instagram.com/wizkleefa/?hl=en" class="fa fa-instagram wow fadeIn" data-wow-delay="0.3s" target="_blank"></a>
-								</li>
-								<li>
-									<a href="https://www.linkedin.com/in/zachary-klee-012797bb/" class="fa fa-linkedin wow fadeIn" data-wow-delay="0.6s" target="_blank"></a>
-								</li>
-							</ul>
-						</div>
+				<div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8 wow fadeInUp">
+					<div class="section-title">
+						<h5 class="wow bounceIn" style="color:#000">RATS</h5>
+						<h1 class="heading ">Testing</h1>
+						<hr>
+						<ul class="plan-list">
+							<li>
+								Control Group: Hemisection performed week of February 19th 2017
+							</li>
+							<li>
+								Test Group : Will have excititory DREADDS administered, TBD <br /> Excititory DREADD : pAAV-hSyn-HA-hM4D(Gi)-mCherry (Plasmid #50475)
+							</li>
+						</ul>
 					</div>
 				</div>
 
-				<div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay=".9s">
-					<div class="team-wrapper">
-						<img src="images/team3.jpg" class="img-responsive" alt="team img">
-						<div class="team-des">
-							<h4>Kenneth Rentz</h4>
-							<h3>Vice President</h3>
-							<ul class="social-icon">
-								<li>
-									<a href="https://www.linkedin.com/in/kenny-rentz-b4555aa6/" class="fa fa-linkedin wow fadeIn" data-wow-delay="0.3s" target="_blank"></a>
-								</li>
-							</ul>
-						</div>
+				<div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8 wow fadeInUp">
+					<div class="section-title">
+						<h5 class="wow bounceIn" style="color:#000">COURSE</h5>
+						<h1 class="heading ">Testing</h1>
+						<hr>
+						<p>
+							Force Plate Dimensions
+						</p>
+						<ul class="plan-list">
+							<li>
+								Length of Spring Blade : 20 mm
+							</li>
+							<li>
+								Width of Spring Blade : 20mm
+							</li>
+							<li>
+								Thickness of Spring Blade: 5 mm
+							</li>
+							<li>
+								Width of Running Surface: 102 mm
+							</li>
+							<li>
+								Length of Running Surface: 204 mm
+							</li>
+						</ul>
+						<p>
+							Course Dimensions
+						</p>
+						<ul class="plan-list">
+
+							<li>
+								Total Length: 1000 mm
+							</li>
+							<li>
+								Preceding length : 296 mm
+							</li>
+							<li>
+								Aft Length: 500mm
+							</li>
+							<li>
+								Width of Corridor : 104 mm
+							</li>
+						</ul>
 					</div>
 				</div>
 
