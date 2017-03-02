@@ -15,3 +15,8 @@ $(document).ready(function() {
         $('#derivation3').toggle('slow');
     });
 })
+$(document).ready(function() {
+    $('#button4').click(function() {
+        $('#dreadds').toggle('slow');
+    });
+})

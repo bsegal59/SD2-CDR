@@ -101,6 +101,10 @@ hr {
     display: none;
 }
 
+#dreadds {
+  display: none;
+}
+
 #about .section-title, #plan .section-title {
     border-color: #ffffff;
 }
