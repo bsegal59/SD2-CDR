@@ -54,7 +54,7 @@ for i=1:length(l)
           P=Pmat+4.9;
           deltamax=delta(P,L,E,I)
           Smax=S(P*L/2,I,H/2)
-          strain=ϵ(P*L/2,H/2,I,E)
+          strain=epsilon(P*L/2,H/2,I,E)
           if Smax<Syield
             write(f,"$Name,$L,$W,$H,$deltamax,$omegan,$strain\n")
           end
